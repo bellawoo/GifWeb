@@ -94,7 +94,6 @@ class GifBotTest < Minitest::Test
   end
 
   def test_can_tag_a_gif
-  	skip
     k = User.create! name: "Kayla"
 		to_tag = k.gifs.create! url: "http://i.imgur.com/OH3IkBS.gif", seen_count: 0
 
@@ -107,7 +106,6 @@ class GifBotTest < Minitest::Test
   end
 
   def test_can_list_gifs_specified_tag
-  	skip
     s = User.create! name: "Saka"
     s1 = s.gifs.create! url: "http://i.imgur.com/4RdyePJ.gif", seen_count: 0
     s2 = s.gifs.create! url: "http://i.imgur.com/rbO4s5N.gif", seen_count: 0
